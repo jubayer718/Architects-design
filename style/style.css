@@ -170,6 +170,47 @@ margin-top: 10px;
 
 }
 
+/* features related styles */
+
+.features-section{
+  gap: 140px;
+}
+#features-section-title{
+  border-left: 5px solid #FF900E;
+  padding: 20px;
+  
+}
+.features-card{
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.features-card .features-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.architect-btn{
+padding: 45px 40px;
+margin-top: -100px;
+margin-left: -100px;
+}
+.architect-heading{
+  font-size: 4rem;
+
+
+}
+.architect-pragraph{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.featured-architect img{
+  width: 100%;
+}
+
+
   /* sponsors section style */
   .sponsors-info{
     max-width: 540px;
@@ -181,16 +222,36 @@ margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%);
+    margin-bottom: 130px;
   }
+
+  footer{
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 1440px;
+    height: 100px;
+    background-color: rgb(255, 244, 231);
+    margin: 0 auto;
+  }
+  .footer{
+    
+
+     font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
 
 /* responsive banner */
 
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links, .teams{
+  .navbar, .nav-links, .teams, .features-section{
     flex-direction: column;
   } 
   
-   .teams-img, .facts-container, .sponsors-company{
+   .teams-img, .facts-container, .sponsors-company {
     grid-template-columns: repeat( 1, 1fr);
    }
    .facts-container {
@@ -204,6 +265,13 @@ margin-top: 10px;
    .our-features{
     margin-left: 20px;
    }
+   .architect-btn{
+    margin: 0 auto;
+    margin-top: -5px;
+   }
+   footer{
+    width: 100%;
+   }
 
 
   
@@ -212,7 +280,7 @@ margin-top: 10px;
 
 /* medium size device */
   @media screen and (min-width: 576px) and (max-width: 992px){
-     .navbar, .teams{
+     .navbar, .teams, .features-section{
     flex-direction: column;
   } 
    .main{
@@ -226,6 +294,12 @@ margin-top: 10px;
       gap: 50px;
       justify-items: center;
     }
+   
+     .architect-btn{
+    margin: 0 auto;
+    margin-top: -5px;
+   }
+
 
     
   }
