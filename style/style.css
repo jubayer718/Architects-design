@@ -48,9 +48,6 @@ body{
   font-size: 3rem ;
 }
 
-.nav-links{
- 
-}
 
 .nav-item{
   list-style: none;
@@ -102,4 +99,11 @@ text-align: center;
   .navbar, .nav-links{
     flex-direction: column;
    }  
-}
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 992px){
+    .navbar{
+      flex-direction: column;
+    }
+    
+  }
